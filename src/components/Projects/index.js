@@ -12,7 +12,7 @@ import Col from "react-bootstrap/Col";
 
 function Projects() {
   return (
-    <Container>
+    <Container className="justify-content-between">
       <Row className="justify-content-evenly ml">
         <Col>
           <Card className="position">
