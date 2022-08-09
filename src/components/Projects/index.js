@@ -12,8 +12,8 @@ import Col from "react-bootstrap/Col";
 
 function Projects() {
   return (
-    <Container className="justify-content-between">
-      <Row className="justify-content-evenly ml">
+    <Container className="ml justify-content-between">
+      <Row className="justify-content-between">
         <Col>
           <Card className="position">
             <Card.Img variant="top" className="cardImg" src={graveWorld} />

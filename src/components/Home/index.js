@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
+      <div className="home-page containing">
         <div className="text-zone">
           <h1>
             <span className="hOne" {...letterClass}>

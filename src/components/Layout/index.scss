@@ -23,8 +23,8 @@
   margin-left: -20px;
 }
 
-.container {
-  // width: 100%;
+.containing {
+  width: 100%;
   will-change: contents;
   height: 90%;
   min-height: 566px;
@@ -39,7 +39,7 @@
 
 .about-page .text-zone {
   position: absolute;
-  left: 22%;
+  left: 20%;
   top: 50%;
   transform: translateY(-50%);
   width: 35%;
@@ -102,17 +102,22 @@
   }
 }
 
+.w-676 {
+  width: 676px;
+}
+
 .contact-page {
   z-index: 90;
 
   .text-zone {
-    position: absolute;
+    position: sticky;
+    // width: 676px;
     left: 50%;
     top: 50%;
     transform: translateY(-50%);
     max-height: 90%;
     text-align: center;
-    align-items: center;
+    margin-left: 70px;
   }
 
   .hOne {

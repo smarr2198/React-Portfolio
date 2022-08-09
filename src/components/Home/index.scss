@@ -3,7 +3,7 @@
   z-index: 90;
 
   .text-zone {
-    position: absolute;
+    position: sticky;
     left: 50%;
     top: 50%;
     transform: translateY(-50%);
