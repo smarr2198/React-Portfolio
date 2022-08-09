@@ -24,7 +24,7 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className="hOne" {...letterClass}>
-              {openTag}{" "}
+              {openTag}
             </span>
             {/* <span className={`${letterClass} _10`}>Hi,</span>
             <span className={`${letterClass} _11`}> </span>
@@ -41,7 +41,6 @@ const Home = () => {
               idx={18}
             /> */}
             <span className="hOne" {...`${letterClass} _10`}>
-              {" "}
               {closeTag}
             </span>
           </h1>
