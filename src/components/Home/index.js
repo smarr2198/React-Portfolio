@@ -8,42 +8,16 @@ import Loader from "react-loaders";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const nameArray = [
-    " ",
-    "S",
-    "t",
-    "e",
-    "p",
-    "h",
-    "e",
-    "n",
-    " ",
-    "M",
-    "a",
-    "r",
-    "r",
-  ];
-  const jobArray = [
-    "w",
-    "e",
-    "b",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-    ".",
-  ];
+  const openTag = "<h1>";
+  const closeTag = "</h1>";
+
+  const nameArray = [" ", "Stephen", " ", "Marr"];
+  const jobArray = [" ", "web", " ", " developer"];
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 4000);
+    }, 3000);
   }, []);
 
   return (
@@ -51,29 +25,46 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _10`}>i,</span>
-            <br />
-            <span className={`${letterClass} _11`}>I</span>
-            <span className={`${letterClass} _12`}>'m</span>
+            <span className="hOne" {...letterClass}>
+              {openTag}{" "}
+            </span>
+            {/* <span className={`${letterClass} _10`}>Hi,</span>
+            <span className={`${letterClass} _11`}> </span>
+            <span className={`${letterClass} _12`}>I'm</span> */}
             <AnimatedLetters
               lettersClass={letterClass}
               strArray={nameArray}
               idx={13}
             />
-            <br />
-            <AnimatedLetters
+            {/* <br /> */}
+            {/* <AnimatedLetters
               lettersClass={letterClass}
               strArray={jobArray}
-              idx={26}
-            />
+              idx={18}
+            /> */}
+            <span className="hOne" {...`${letterClass} _10`}>
+              {" "}
+              {closeTag}
+            </span>
           </h1>
           <h2> Full Stack JavaScript Developer</h2>
+          {/* <Link to="/about" className="flat-button">
+            ABOUT ME
+          </Link>
           <Link to="/contact" className="flat-button">
             CONTACT ME
-          </Link>
+          </Link> */}
         </div>
-        {/* <Logo /> */}
+      </div>
+      <div className="animation-area">
+        <ul className="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
       <Loader type="pacman" />
     </>

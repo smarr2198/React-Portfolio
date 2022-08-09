@@ -6,6 +6,11 @@ import "./index.scss";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+
+  const openTag = "<h1>";
+  const closeTag = "</h1>";
+  const nameArray = ["Contact", " ", "Me"];
+
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -17,12 +22,25 @@ const Contact = () => {
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
+            <span className="hOne" {...letterClass}>
+              {openTag}{" "}
+            </span>
             <AnimatedLetters
               lettersClass={letterClass}
-              strArray={["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"]}
+              strArray={nameArray}
               idx={15}
             />
+            <span className="hOne" {...`${letterClass} _10`}>
+              {" "}
+              {closeTag}
+            </span>
           </h1>
+          <p className="">
+            Currently Looking for a web development position. Interested in
+            frontend, backend, or fullstack. knowledgeable in JavaScript, HTML,
+            CSS, SQL, and MongoDB
+          </p>
+
           <a href="mailto:smarr2198@gmail.com" className="flat-button">
             Email Me
           </a>
@@ -34,7 +52,16 @@ const Contact = () => {
           </a>
         </div>
       </div>
-
+      <div className="animation-area">
+        <ul className="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <Loader type="pacman" />
     </>
   );
