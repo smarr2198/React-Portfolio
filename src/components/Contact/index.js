@@ -37,8 +37,8 @@ const Contact = () => {
           </h1>
           <p className="">
             Currently Looking for a web development position. Interested in
-            frontend, backend, or fullstack. knowledgeable in JavaScript, HTML,
-            CSS, SQL, and MongoDB
+            frontend, backend, or fullstack. knowledgeable in JavaScript,
+            React.js, Node.js, Express.js, HTML, CSS, SQL, and MongoDB
           </p>
 
           <a href="mailto:smarr2198@gmail.com" className="flat-button">

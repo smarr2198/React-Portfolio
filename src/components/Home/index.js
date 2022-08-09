@@ -1,5 +1,3 @@
-import LogoTitle from "../../assets/images/LetterS.png";
-import { Link } from "react-router-dom";
 import "./index.scss";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";

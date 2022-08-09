@@ -1,0 +1,60 @@
+.flat-button {
+  color: #48adda;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #48adda;
+  margin-top: 25px;
+  margin-right: 19px;
+  float: none;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+  &:hover {
+    background: #48adda;
+    color: #333;
+  }
+}
+
+.cardImg {
+  min-height: 400px;
+}
+
+.textBox {
+  //   max-height: 100px;
+}
+
+.position {
+  left: 70%;
+  top: 7%;
+  width: 31rem;
+  border-color: #48adda;
+  background: #343a3f;
+  color: #48adda;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  border: 1px solid #48adda;
+  background: #343a3f;
+  color: #48adda;
+  font-size: 14px;
+
+  &:hover {
+    color: #343a3f;
+    background: #48adda;
+  }
+}
